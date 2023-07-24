@@ -1,4 +1,236 @@
-/* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import 'assets/scss/main.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {  
+  --primary-color: #035c9b;
+  --primary-color-2: #57bbd1;
+  --font-family:'Raleway', sans-serif;
+  --white-color: #fff;
+  --gray-color: #383838;
+  --black-color: #000;
+  --gradient-color: linear-gradient(90deg,#035c9b,#57bbd1);
+}
+
+.custom-container {  
+  max-width: 1620px !important;
+  margin: 0 auto;
+  padding-left: 3% !important;
+  padding-right: 3% !important;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.default-button {
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 18px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  text-align: center;
+  padding: 6px 30px;
+  cursor: pointer !important;
+}
+
+.default-button:hover {
+  background: var(--primary-color-2);
+}
+
+
+::ng-deep .autocomplete-container {
+  box-shadow: none !important;
+  background: none !important;
+  height: 34px !important;
+}
+::ng-deep .autocomplete-container .input-container input {
+  padding-left: 0px !important;
+}
+::ng-deep .ng-arrow-wrapper {
+  display: none;
+}
+
+.fa-add:before, .fa-plus:before {
+  content: "\2b" !important;
+}
+
+.date {    
+  font-family: system-ui;
+  font-size: 17px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.hideButton {
+  position: absolute;
+  top: 7px;
+  right: -23px;
+  cursor: pointer;
+  button {
+    border: none;
+    background-color: none;
+    outline: none;
+    box-shadow: none;
+    background: none;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    &:hover {
+      background-color: aliceblue;
+      border-radius: 50%;
+    }
+  }
+}
+
+::ng-deep .fc-timegrid-event-harness > .fc-timegrid-event {
+  background-color: #edff9d;
+  color: black;
+  border: none;
+  border-left: 4px solid #bacc66;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  max-width: fit-content;
+  padding: 0px 30px 0px 5px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-left: 30px;
+  height: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+::ng-deep .fc .fc-timegrid-col.fc-day-today, ::ng-deep .fc .fc-daygrid-day.fc-day-today {
+  background-color: transparent;
+}
+::ng-deep .fc-v-event .fc-event-main {
+  color: black;
+}
+::ng-deep .fc .fc-timegrid-slot-label-cushion{
+  font-weight: 600;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+::ng-deep .fc-timegrid-event .fc-event-main{
+  padding: 10px;
+}
+::ng-deep .fc .fc-button-group > .fc-button {
+  text-transform: capitalize;
+  outline: none !important;
+  background-color: transparent;
+  border-color: #e0f9ff;
+  box-shadow: none !important;
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 5px 14px;
+}
+::ng-deep .fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active{
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  border-radius: 7px;
+  box-shadow: none !important;
+  outline: none !important;
+}
+::ng-deep .fc .fc-button-group {
+  background-color: #e0f9ff;
+  padding: 4px;
+  border-radius: 6px;
+}
+::ng-deep .fc .fc-toolbar-title {
+  font-family: sans-serif;
+  font-weight: 600;
+}
+::ng-deep .fc .fc-timegrid-slot {
+  height: 1.8em;
+}
+::ng-deep .fc-direction-ltr .fc-timegrid-slot-label-frame {
+  text-align: center;
+}
+::ng-deep .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+/* width fix */
+@media only screen and (min-width: 1200px) {
+  .col-22 {
+    width: 22% !important;
+  }
+  .col-78 {
+    width: 78% !important;
+  }
+
+}
+
+::ng-deep .sidePenalCollapsed {
+  
+  .user-profile-tabs .profile-tabs .list li a {
+    padding-left: 16px !important; 
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+    &:hover {
+      background-color: var(--primary-color) !important;
+      color: white !important;
+      i {
+        color: white !important;
+      }
+    }
+    i {
+      font-size: 26px !important;
+    }
+  }
+  .hideButton {
+    right: 9px !important;
+    top: 5px !important;
+    button {
+      border: none;
+      background-color: none;
+      outline: none;
+      box-shadow: none;
+      background: none;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      &:hover {
+        background-color: aliceblue;
+        border-radius: 50%;
+      }
+    }
+  }
+  .upper-box .title-box {
+    margin: 0px !important;
+    .inner p i {
+      font-size: 22px !important;
+      margin-top: 30px !important;
+    }
+  } 
+  .hideCollapse {
+    display: none !important;
+  }
+  .col-22 {
+    width: 5% !important;
+  }
+  .col-78 {
+    width: 95% !important;
+  }
+}

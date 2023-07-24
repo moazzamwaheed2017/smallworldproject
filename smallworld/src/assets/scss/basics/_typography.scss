@@ -1,0 +1,23 @@
+.text-primary{
+    color: $color-primary !important;
+}
+.text-secondary{
+    color: $color-secondary !important;
+}
+
+.fw-800{
+    font-weight: 800;
+}
+.fw-bold{
+    font-weight: bold;
+}
+
+.text-light-dark{
+    color: #999;
+}
+
+h2.title{
+    color: $color-primary;
+    font-weight: 800;
+    font-size: 22px;
+}

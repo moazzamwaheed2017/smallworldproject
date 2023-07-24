@@ -1,0 +1,47 @@
+.card{
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    .card-header{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        font-size: 18px;
+        padding-bottom: 08px !important;
+        border-bottom: 1px solid #eee !important; 
+        .btn{
+            padding:6px 20px;
+        }
+    }
+
+    .card-body{
+        padding:20px 0;
+    }
+}
+
+
+.top-cards{
+    .card{
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        .icon{
+            margin-right: 10px;
+            max-width: 50px;
+            svg{
+                width: 100%;
+            }
+        }
+        .text{
+            .title{
+                font-size: 12px;
+                font-weight: 700;
+            }
+            .value{
+                font-weight: 800;
+                font-size: 24px;
+            }
+        }
+
+    }
+}

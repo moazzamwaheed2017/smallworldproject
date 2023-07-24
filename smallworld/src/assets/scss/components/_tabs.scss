@@ -1,0 +1,16 @@
+.nav-tabs{
+    padding-bottom: 10px;
+  
+    .nav-link{
+        margin-right: 10px;
+        border: 0;
+        background: rgba($color-primary, 0.1) !important;
+        color: $color-black;
+        border-radius: 5px;
+
+        &.active{
+            background: $gradient-primary-secondary !important;
+            color: $color-white;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.search-area{
+    .input-group{
+        .form-control{
+            border: 0;
+            border-radius: 0.25rem !important;
+            background-color: $color-body;
+        }
+        .input-group-text{
+            border: 0;
+            background-color: $color-body;
+            position: absolute;
+            right: 4px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 999;
+            svg{width: 20px;}
+        }
+    }
+}

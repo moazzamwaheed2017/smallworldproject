@@ -1,0 +1,19 @@
+.btn-primary{
+    background: linear-gradient(to right, $color-primary,$color-secondary);
+    border: 2px solid transparent;
+    &:hover{
+        border: 2px solid transparent;
+    }
+}
+.btn-outline-primary{
+    background-color: transparent;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+    &:hover{
+        border: 2px solid transparent;
+        background: linear-gradient(to right, $color-primary,$color-secondary);
+    }
+}
+.btn{
+    padding: 5px 20px;
+}

@@ -1,0 +1,97 @@
+.login-container{
+    // background: url('../../images/background-1.png');
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content:flex-end ;
+    align-items: stretch;
+    overflow: hidden;
+    .login-card{
+        background-color: $color-white;
+        max-width: 500px;
+        width: 100%;
+        box-shadow: -10px 0 10px rgba($color: #000000, $alpha: 0.14);
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: moveFromRight 2s ease-in-out;
+        .login-content{
+            width: 90%;
+            .logo{
+                width: 220px;
+                margin-bottom: 20px;
+                img{width: 100%;}
+            }
+            h2{
+                font-size: 22px;
+                color: $color-primary;
+                margin-bottom: 30px;
+                font-weight: 700;
+            }
+            p{
+                font-size: 14px;
+                a{
+                    text-decoration: none;
+                    font-weight: 500;
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+.login-container-2{
+    // background:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url('../../images/background-2.png');
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    overflow: hidden;
+    .login-card{
+        background-color: $color-white;
+        max-width: 500px;
+        width: 100%;
+        box-shadow: 0px 0 20px rgba($color: #000000, $alpha: 0.3);
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .login-content{
+            width: 90%;
+            .logo{
+                width: 220px;
+                margin-bottom: 20px;
+                img{width: 100%;}
+            }
+            h2{
+                font-size: 22px;
+                color: $color-primary;
+                margin-bottom: 30px;
+                font-weight: 700;
+            }
+            p{
+                font-size: 14px;
+                a{
+                    text-decoration: none;
+                    font-weight: 500;
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+
+
+@keyframes moveFromRight {
+    0%{
+        margin-right: -100%;
+    }
+    100%{
+        margin-right: 0;
+    }
+}
