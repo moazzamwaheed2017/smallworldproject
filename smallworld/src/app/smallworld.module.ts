@@ -2,7 +2,9 @@ import {
   SmallWorldComponent,
   HeaderComponent,
   AsideComponent,
-  MainContentComponent
+  MainContentComponent,
+  DropDownsComponent,
+  SearchResultComponent
 } from './smallworld.components';
 
 import { NgModule } from '@angular/core';
@@ -17,7 +19,9 @@ import { MaterialModule } from './material.module';
     SmallWorldComponent,
     HeaderComponent,
     AsideComponent,
-    MainContentComponent
+    MainContentComponent,
+    DropDownsComponent,
+    SearchResultComponent
       ],
   imports: [
     BrowserModule,

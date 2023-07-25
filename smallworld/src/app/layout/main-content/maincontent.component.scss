@@ -11,3 +11,33 @@ table {
     width: 80px;
     height: 60px;    
 }
+
+.main-divs {
+    width: 100%; 
+    display: table;
+    position: relative;
+    top: 60px;
+  }
+
+.main-div {
+    width: 100%; 
+    display: table;
+  }
+
+  .main-div-div {
+    display: table-row; 
+    height: 100px;
+  }
+
+  .main-div-div-div {
+    display: table-cell;
+  }
+
+  .main-div-content {
+    display: table-cell;
+  }
+
+  .bottom-box {
+    height: 200px;
+    width: 60%;
+  }

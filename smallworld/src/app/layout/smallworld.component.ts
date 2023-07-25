@@ -6,10 +6,6 @@ import { Router } from '@angular/router';
   templateUrl: './smallworld.component.html',
   styleUrls: ['./smallworld.component.scss'],
 })
-export class SmallWorldComponent implements OnInit {
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
+export class SmallWorldComponent {
+  
 }

@@ -1,0 +1,41 @@
+<div class="container custom-container parentDiv mt-5 mb-5">
+  <div class="row g-3">
+    <div style="height: 160px;">
+      <div class="user-profile-tabs" style="height: 165px;
+      position: relative; top: -37px;">
+         <div class="profile-tabs">
+           Phase Result
+        </div>
+        <div class="profile-tabs">
+          Phase #1 Result:   6
+       </div>
+       <div class="profile-tabs">
+         Phase #2 Result:    10
+       </div>   
+       
+      </div>
+    </div>
+
+    <div>
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input type="text" placeholder="search" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto" (keyup)="updated()" [(ngModel)]="data">
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of options" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </form>
+    </div>
+
+    <div style="height: 200px; background: green;">
+      <div class="user-profile-tabs" style="height: 165px;">
+        <div class="profile-tabs">
+           Progress
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
