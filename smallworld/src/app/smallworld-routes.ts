@@ -4,7 +4,7 @@ import {
 } from './smallworld.components';
 import { Component } from '@angular/core';
 export const applicationRoutes: Routes = [
-    { path: '', redirectTo: 'doc-saab', pathMatch: 'full' },
+    { path: '', redirectTo: 'smallworld', pathMatch: 'full' },
 ];
 
 export class SmallWorldRoutes {
